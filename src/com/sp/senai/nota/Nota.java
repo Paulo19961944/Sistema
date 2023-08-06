@@ -1,12 +1,12 @@
 package com.sp.senai.nota;
 import java.util.Scanner;
-
 public class Nota {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
         /** Transforma em Loop Infinito */
         boolean form = true;
+
         /** Validação */
         while (form) {
             System.out.print("Digite o Curso: ");
@@ -42,7 +42,7 @@ public class Nota {
             /** Verifica se quer continuar ou não */
             System.out.println("Caso deseje encerrar digite N:, Caso deseje continuar, digite qualquer outra letra: ");
             String opcao = teclado.next();
-            if (opcao.equalsIgnoreCase("N")) {
+            if (opcao.equals("N") || opcao.equals("n")) {
                 form = false;
             }
         }
